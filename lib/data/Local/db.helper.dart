@@ -56,6 +56,7 @@ class DBHelper {
 
         await db.execute('''
           CREATE TABLE $TABLE_WINE_CART (
+          
             $COLUMN_WINE_ID TEXT PRIMARY KEY,
             $COLUMN_WINE_NAME TEXT,
             $COLUMN_WINERY TEXT,
