@@ -1,9 +1,9 @@
-import 'package:danger_now/Auth/SplashScreen/SplashScreen.dart';
+import 'package:danger_now/app/routes/AppRoutes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'SharedPreference/sharedprefrence.dart';
-import 'Triall.dart';
-import 'View/Location/controller/locationController.dart';
+import 'app/routes/App_Pages.dart';
+import 'core/storage/sharedprefrence.dart';
+import 'features/location/controllers/locationController.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,7 +19,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Splashscreen(),
+      initialRoute: AppRoutes.splash,
+      getPages: AppPages.screens,
     );
   }
 }
