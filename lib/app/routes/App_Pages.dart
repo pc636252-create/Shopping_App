@@ -4,7 +4,6 @@ import 'package:danger_now/features/auth/controllers/signup_controller.dart';
 import 'package:danger_now/features/auth/controllers/splash_controller.dart';
 import 'package:danger_now/features/auth/views/forgot_page.dart';
 import 'package:danger_now/features/auth/views/login.dart';
-
 import 'package:danger_now/app/routes/AppRoutes.dart';
 import 'package:danger_now/features/auth/views/signup_page.dart';
 import 'package:danger_now/features/auth/views/splash_page.dart';

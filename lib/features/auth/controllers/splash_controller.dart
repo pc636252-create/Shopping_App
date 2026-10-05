@@ -1,7 +1,6 @@
 
 import 'package:danger_now/app/routes/AppRoutes.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 import '../../../core/storage/sharedprefrence.dart';
 
 class SplashController extends GetxController {
@@ -21,7 +20,7 @@ class SplashController extends GetxController {
     await Future.delayed(const Duration(seconds: 3));
 
     if (token != null && token.isNotEmpty) {
-      Get.offAllNamed(AppRoutes.home);
+      Get.offAllNamed(AppRoutes.navigation);
     } else {
       Get.offAllNamed(AppRoutes.login);
     }
